@@ -5,6 +5,10 @@ add_includedirs("include")
 add_defines("LCUI_EXPORTS")
 includes("lib/**/xmake.lua")
 set_warnings("all")
+add_cxflags("-fPIC")
+if is_mode("release") then
+    set_symbols("none")
+end
 
 target("LCUI")
     set_kind("shared")

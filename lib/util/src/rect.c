@@ -31,6 +31,7 @@
 #include <stdlib.h>
 #include <LCUI_Build.h>
 #include <LCUI/LCUI.h>
+#include <LCUI/util/rect.h>
 
 LCUI_Rect Rect(int x, int y, int w, int h)
 {
@@ -182,7 +183,6 @@ LCUI_BOOL LCUIRect_IsCoverRect(const LCUI_Rect *a, const LCUI_Rect *b)
 	}
 	return TRUE;
 }
-
 LCUI_BOOL LCUIRectF_IsCoverRect(const LCUI_RectF *a, const LCUI_RectF *b)
 {
 	if (a->x > b->x) {
