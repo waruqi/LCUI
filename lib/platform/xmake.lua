@@ -1,4 +1,3 @@
-add_rules("mode.debug", "mode.release")
 add_requires("libomp", {optional = true})
 add_includedirs("src")
 
@@ -45,6 +44,7 @@ target("linux")
         set_default(false)
     end
     set_kind("static")
+    add_deps("thread")
     add_files("src/linux/*.c")
 
 target("platform")

@@ -35,6 +35,7 @@
 #include <LCUI/LCUI.h>
 #include <LCUI/gui/widget.h>
 #include <LCUI/display.h>
+#include <LCUI/util/rect.h>
 #include "widget_border.h"
 #include "widget_background.h"
 #include "widget_shadow.h"
